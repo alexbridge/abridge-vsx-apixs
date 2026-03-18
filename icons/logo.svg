@@ -1,0 +1,29 @@
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+    <path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </marker>
+</defs>
+
+<!-- background -->
+<rect width="128" height="128" rx="16" fill="#1a1f2e"/>
+
+<!-- left curly bracket -->
+<path d="M32 14 Q16 22 16 38 Q16 48 4 56 Q16 64 16 74 Q16 90 32 98" fill="none" stroke="#2dd4bf" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+
+<!-- right curly bracket -->
+<path d="M96 14 Q112 22 112 38 Q112 48 124 56 Q112 64 112 74 Q112 90 96 98" fill="none" stroke="#2dd4bf" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+
+<!-- arrow -->
+<line x1="30" y1="56" x2="96" y2="56" fill="none" stroke="#4f8ef7" stroke-width="5.5" stroke-linecap="round" marker-end="url(#arrow)"/>
+
+<!-- center dot -->
+<circle cx="64" cy="56" r="7" fill="#2dd4bf"/>
+<!-- side dots -->
+<circle cx="46" cy="56" r="5" fill="#a78bfa" opacity="0.9"/>
+<circle cx="82" cy="56" r="5" fill="#a78bfa" opacity="0.9"/>
+
+<!-- wordmark -->
+<text x="64" y="120" text-anchor="middle" font-family="sans-serif" font-size="16" font-weight="600" fill="#f0f4ff">APIxs</text>
+
+</svg>
