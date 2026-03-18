@@ -1,0 +1,5 @@
+.vscode
+.vscodeignore
+dist
+*.vsix
+node_modules

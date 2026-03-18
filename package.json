@@ -7,7 +7,7 @@
   "author": "abridge",
   "repository": {
     "type": "git",
-    "url": "https://github.com/alexbridge/vscode-apixs.git"
+    "url": "https://github.com/alexbridge/abridge-vsx-apixs.git"
   },
   "engines": {
     "vscode": "^1.85.0"
@@ -34,7 +34,7 @@
     "build:css": "npx @tailwindcss/cli -i webview/styles.css -o dist/tailwind.css --minify",
     "build:all": "npm run build && npm run build:webview && npm run build:css",
     "build:production": "node esbuild.js --production && node esbuild.webview.js --production && npm run build:css",
-    "package": "npm run build:production && yes | npx @vscode/vsce package --no-dependencies",
+    "package": "yes | npx @vscode/vsce package --no-dependencies",
     "watch": "node esbuild.js --watch",
     "lint": "npm run format:check && tsc --noEmit",
     "format": "prettier --write \"src/**/*.ts\"",
@@ -498,7 +498,7 @@
     "@types/vscode": "^1.85.0",
     "esbuild": "^0.27.4",
     "tailwindcss": "^4.2.1",
-    "prettier": "^3.8.1",  
+    "prettier": "^3.8.1",
     "typescript": "^5.3.0"
   },
   "dependencies": {

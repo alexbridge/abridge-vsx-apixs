@@ -8,6 +8,10 @@
 
 APIxs is a robust REST & HTTP client built directly into VS Code. It provides the power of professional tools like Postman, Bruno, and Thunder Client while remaining lightweight and strictly local-first. With a built-in collection runner and full `pm-scripting` compatibility, APIxs is the perfect tool for developers who value privacy, speed, and version control.
 
+<p align="center">
+<img src="media/demo.gif" alt="REST Client"/>
+</p>
+
 ---
 
 ## Why I Built This
@@ -101,12 +105,12 @@ Import your existing collection. APIxs automatically supports formats from other
 
 Open the Command Palette (`Ctrl+Shift+P` / `Cmd+Shift+P`) and type **Apixs** to access:
 
-| Command                          | Description                                    |
-| -------------------------------- | ---------------------------------------------- |
-| `Apixs: Open Apixs`             | Open the main APIxs panel                      |
-| `Apixs: SSE Viewer`             | Open the Server-Sent Events streaming viewer   |
-| `Apixs: Import Collection/Environment` | Import a collection or environment file  |
-| `Apixs: Switch Environment`     | Switch the active environment                  |
+| Command                                | Description                                  |
+| -------------------------------------- | -------------------------------------------- |
+| `Apixs: Open Apixs`                    | Open the main APIxs panel                    |
+| `Apixs: SSE Viewer`                    | Open the Server-Sent Events streaming viewer |
+| `Apixs: Import Collection/Environment` | Import a collection or environment file      |
+| `Apixs: Switch Environment`            | Switch the active environment                |
 
 ---
 
