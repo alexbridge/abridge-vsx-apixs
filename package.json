@@ -2,7 +2,7 @@
   "name": "apixs",
   "displayName": "APIxs",
   "description": "High-performance, git-friendly, open source API client with familiar pm-scripting support",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "publisher": "abridge",
   "author": "abridge",
   "repository": {
@@ -18,13 +18,16 @@
     "Other"
   ],
   "keywords": [
-    "pm",
+    "postman",
+    "bruno",
     "http-client",
     "rest-client",
-    "api-tester",
+    "http client",
+    "rest client",
     "http",
     "client",
-    "vscode-extension"
+    "vscode-extension",
+    "runner"
   ],
   "activationEvents": [],
   "main": "./dist/extension.js",
