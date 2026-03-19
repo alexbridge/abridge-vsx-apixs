@@ -2,7 +2,7 @@
   "name": "apixs",
   "displayName": "APIxs",
   "description": "High-performance, git-friendly, open source API client with familiar pm-scripting support",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "publisher": "abridge",
   "author": "abridge",
   "repository": {
@@ -199,6 +199,12 @@
         "icon": "$(edit)"
       },
       {
+        "command": "apixs.openGlobals",
+        "title": "Edit Globals",
+        "category": "Apixs",
+        "icon": "$(edit)"
+      },
+      {
         "command": "apixs.activateEnvironment",
         "title": "Set Active",
         "category": "Apixs",
@@ -310,6 +316,16 @@
           "group": "2_edit@2"
         },
         {
+          "command": "apixs.moveUp",
+          "when": "view == apixs.collections && viewItem == collection",
+          "group": "2_edit@3"
+        },
+        {
+          "command": "apixs.moveDown",
+          "when": "view == apixs.collections && viewItem == collection",
+          "group": "2_edit@4"
+        },
+        {
           "command": "apixs.deleteCollection",
           "when": "view == apixs.collections && viewItem == collection",
           "group": "3_delete@1"
@@ -393,6 +409,11 @@
           "command": "apixs.deleteRequest",
           "when": "view == apixs.collections && viewItem == request",
           "group": "3_delete@1"
+        },
+        {
+          "command": "apixs.openGlobals",
+          "when": "view == apixs.environments && viewItem == globals",
+          "group": "inline@1"
         },
         {
           "command": "apixs.activateEnvironment",
