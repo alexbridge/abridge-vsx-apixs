@@ -1,8 +1,8 @@
 {
   "name": "apixs",
   "displayName": "APIxs",
-  "description": "High-performance, git-friendly, open source API client with familiar pm-scripting support",
-  "version": "1.0.2",
+  "description": "High-performance, git-friendly, API client with familiar pm-scripting support (xs = extra scripting)",
+  "version": "1.0.3",
   "publisher": "abridge",
   "author": "abridge",
   "repository": {

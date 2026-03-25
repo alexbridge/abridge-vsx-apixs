@@ -2,7 +2,7 @@
   <img src="icons/logo.png" alt="APIxs" width="128" />
 </p>
 
-# APIxs
+# APIxs (API Client with extra scripting)
 
 > REST & HTTP client built directly into VS Code. Designed for local-first workflows and seamless automation.
 
@@ -146,4 +146,4 @@ APIxs includes a built-in **Server-Sent Events (SSE) viewer** for real-time stre
 
 ---
 
-License: MIT | Created by abridge
+License: Proprietary | Created by abridge
