@@ -2,7 +2,7 @@
   "name": "apixs",
   "displayName": "APIxs",
   "description": "High-performance, git-friendly, API client with familiar pm-scripting support (xs = extra scripting)",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "publisher": "abridge",
   "author": "abridge",
   "repository": {
@@ -54,6 +54,12 @@
       {
         "command": "apixs.import",
         "title": "Import Collection/Environment",
+        "category": "Apixs",
+        "icon": "$(cloud-upload)"
+      },
+      {
+        "command": "apixs.exportCollection",
+        "title": "Export Collection to Postman",
         "category": "Apixs",
         "icon": "$(cloud-download)"
       },
@@ -242,6 +248,12 @@
       }
     ],
     "menus": {
+      "commandPalette": [
+        {
+          "command": "apixs.exportCollection",
+          "when": "false"
+        }
+      ],
       "view/title": [
         {
           "command": "apixs.findRequest",
@@ -324,6 +336,11 @@
           "command": "apixs.moveDown",
           "when": "view == apixs.collections && viewItem == collection",
           "group": "2_edit@4"
+        },
+        {
+          "command": "apixs.exportCollection",
+          "when": "view == apixs.collections && viewItem == collection",
+          "group": "2_edit@5"
         },
         {
           "command": "apixs.deleteCollection",
