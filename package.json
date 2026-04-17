@@ -2,7 +2,7 @@
   "name": "apixs",
   "displayName": "APIxs",
   "description": "High-performance, git-friendly, API client with familiar pm-scripting support (xs = extra scripting)",
-  "version": "1.0.8",
+  "version": "1.1.0",
   "publisher": "abridge",
   "author": "abridge",
   "repository": {
@@ -130,6 +130,12 @@
         "icon": "$(add)"
       },
       {
+        "command": "apixs.addFromCurl",
+        "title": "Paste from cURL",
+        "category": "Apixs",
+        "icon": "$(clippy)"
+      },
+      {
         "command": "apixs.renameRequest",
         "title": "Rename Request",
         "category": "Apixs",
@@ -252,6 +258,10 @@
         {
           "command": "apixs.exportCollection",
           "when": "false"
+        },
+        {
+          "command": "apixs.addFromCurl",
+          "when": "false"
         }
       ],
       "view/title": [
@@ -318,6 +328,11 @@
           "group": "1_add@2"
         },
         {
+          "command": "apixs.addFromCurl",
+          "when": "view == apixs.collections && viewItem == collection",
+          "group": "1_add@3"
+        },
+        {
           "command": "apixs.renameCollection",
           "when": "view == apixs.collections && viewItem == collection",
           "group": "2_edit@1"
@@ -376,6 +391,11 @@
           "command": "apixs.addRequest",
           "when": "view == apixs.collections && viewItem == folder",
           "group": "1_add@2"
+        },
+        {
+          "command": "apixs.addFromCurl",
+          "when": "view == apixs.collections && viewItem == folder",
+          "group": "1_add@3"
         },
         {
           "command": "apixs.renameFolder",

@@ -46,12 +46,14 @@ Migrate your complex workflows without rewriting your scripts. APIxs supports th
 - **Postman-Compatible**: Supports `pm.environment`, `pm.test`, `pm.expect`, and more.
 - **Async Execution**: Use `pm.sendRequest()` for multi-step auth or data fetching.
 - **Pre-loaded Libraries**: Access `lodash`, `moment`, `crypto`, `yaml`, and `uuid` out of the box.
+- **Snippet Bar**: Fuzzy-searchable bottom bar with 70+ `pm.*` snippets — type `pm test status` and insert instantly.
 
 ### 🏃 Power Tools: Collection Runner
 Automate your API testing with the high-performance Folder Runner—a feature often missing from other VS Code clients.
 - **Bulk Execution**: Run entire folders or collections sequentially.
+- **Data-Driven Runs**: Iterate over CSV or JSON files; last 10 files remembered per workspace for one-click reload.
 - **Customizable Logic**: Configure iterations, delays, and "Stop on Error" behavior.
-- **Integrated Reports**: View real-time success/failure metrics directly in the runner dashboard.
+- **Integrated Reports**: View real-time success/failure metrics, including pre/post script assertion results.
 
 ### 🧪 Smart Variable Engine
 Powerful template resolution across URLs, headers, and bodies with a clear resolution hierarchy:
@@ -64,9 +66,21 @@ Powerful template resolution across URLs, headers, and bodies with a clear resol
 
 ### 🔍 Deep Inspection & cURL
 Understand exactly what's happening under the hood.
-- **Request/Response Dump**: View the raw HTTP payload exactly as it travels over the wire.
-- **Instant cURL**: Copy any request as a standard cURL command with one click.
+- **Request/Response Dump**: View the raw HTTP payload exactly as it travels over the wire — even for failed requests, with fully resolved variables.
+- **Instant cURL**: Copy any request as a standard cURL command with one click. Or go the other way — **Paste from cURL** on any folder to create a request from your clipboard.
 - **Performance Metrics**: Detailed timing breakdown (DNS, TCP, TLS, First Byte) for every call.
+- **Log Level Filter**: Native VS Code Output panel with Info / Warning / Error / Debug filter dropdown — `console.log` from scripts is now searchable.
+
+### 🎨 Response Viewer
+- **JSON**: Pretty-printed with syntax highlighting and optional alphabetical key sort.
+- **Images**: Render PNG/JPEG/WebP/SVG responses inline.
+- **PDF**: One click opens the response in your OS's PDF viewer.
+- **XML, HTML, Text**: Auto-detected formatting.
+
+### 📦 Import & Export
+- **Import** Postman v2.1 collections and environments.
+- **Import from cURL** — paste a cURL command to create a request (right-click any folder).
+- **Export to Postman** — round-trip your collections back to Postman v2.1 format for Newman or team sharing.
 
 ---
 
@@ -93,11 +107,13 @@ Since APIxs is hosted on Open VSX, VS Code users can install it by downloading t
 
 ### 📥 Seamless Migration
 Import your existing collection. APIxs automatically supports formats from other popular tools:
-- Import `.json` collections files.
+- Import Postman `.json` collection files (v2.1).
+- **Paste from cURL**: right-click any folder → *Paste from cURL* to create a request from your clipboard.
 - Automatically migrate request metadata, headers, and body.
 - Support for Bearer, Basic, and API Key authentication.
 - Preserve pre-request and test scripts.
 - Retain variables and folder structures.
+- **Round-trip**: Export back to Postman v2.1 format at any time.
 
 ---
 
