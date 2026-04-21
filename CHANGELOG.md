@@ -2,6 +2,12 @@
 
 All notable changes to APIxs will be documented here.
 
+## [1.2.0] - 2026-04-21
+
+### Added
+- **Collections Quick Filter** — filter tree by folder path; comma for OR.
+- **Filter history** — last 10 saved in `.apixs/filters.json`.
+
 ## [1.1.0] - 2026-04-17
 
 ### Added

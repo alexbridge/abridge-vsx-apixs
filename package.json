@@ -2,7 +2,7 @@
   "name": "apixs",
   "displayName": "APIxs",
   "description": "High-performance, git-friendly, API client with familiar pm-scripting support (xs = extra scripting)",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "publisher": "abridge",
   "author": "abridge",
   "repository": {
@@ -251,6 +251,18 @@
         "title": "Find Request",
         "category": "Apixs",
         "icon": "$(search)"
+      },
+      {
+        "command": "apixs.filterCollections",
+        "title": "Filter Collections",
+        "category": "Apixs",
+        "icon": "$(filter)"
+      },
+      {
+        "command": "apixs.clearCollectionsFilter",
+        "title": "Clear Collections Filter",
+        "category": "Apixs",
+        "icon": "$(clear-all)"
       }
     ],
     "menus": {
@@ -268,6 +280,16 @@
         {
           "command": "apixs.findRequest",
           "when": "view == apixs.collections",
+          "group": "navigation"
+        },
+        {
+          "command": "apixs.filterCollections",
+          "when": "view == apixs.collections",
+          "group": "navigation"
+        },
+        {
+          "command": "apixs.clearCollectionsFilter",
+          "when": "view == apixs.collections && apixs.collectionsFiltered",
           "group": "navigation"
         },
         {
