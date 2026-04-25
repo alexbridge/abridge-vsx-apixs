@@ -2,6 +2,12 @@
 
 All notable changes to APIxs will be documented here.
 
+## [1.3.0] - 2026-04-25
+
+### Added
+- **Faker locale setting** — `apixs.faker.locale` drives `{{$random*}}` (names, IBAN, etc.).
+- **Export Request to cURL** — right-click → copy resolved cURL.
+
 ## [1.2.0] - 2026-04-21
 
 ### Added
