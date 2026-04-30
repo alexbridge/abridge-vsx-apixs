@@ -1,20 +1,23 @@
 # Changelog
 
-All notable changes to APIxs will be documented here.
+## [1.4.0]
 
-## [1.3.0] - 2026-04-25
+### Added
+- **Import from cURL** — inject environment variables placeholders, eg `{{host}}` for environment variables values.
+
+## [1.3.0]
 
 ### Added
 - **Faker locale setting** — `apixs.faker.locale` drives `{{$random*}}` (names, IBAN, etc.).
 - **Export Request to cURL** — right-click → copy resolved cURL.
 
-## [1.2.0] - 2026-04-21
+## [1.2.0]
 
 ### Added
 - **Collections Quick Filter** — filter tree by folder path; comma for OR.
 - **Filter history** — last 10 saved in `.apixs/filters.json`.
 
-## [1.1.0] - 2026-04-17
+## [1.1.0]
 
 ### Added
 - **Paste from cURL** — right-click a folder or collection → *Paste from cURL* → parses clipboard into a new request. Handles method, URL, headers, body (raw/form-data/urlencoded), Bearer/Basic auth, and query params.
