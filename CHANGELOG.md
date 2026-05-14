@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.5.0]
+
+### Added
+- **Inspector Trace** — Full execution visibility for pre/post request scripts.
+- **Body Streaming** — `pm.response.stream` buffered stream of response
+- **Enhanced Fuzzy Match** — Improved search for scripts, variables, and autocomplete.
+  **Inline Editing** — Direct renaming of requests and folders in the request page.
+
 ## [1.4.0]
 
 ### Added
