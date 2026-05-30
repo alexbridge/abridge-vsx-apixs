@@ -1,5 +1,10 @@
 # Changelog
 
+## [1.6.0]
+
+### Added
+- **Runner** — allow run iterations in parallel.
+
 ## [1.5.0]
 
 ### Added
