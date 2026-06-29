@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.7.0]
+
+### Added
+- Folders export as Postman collections.
+- Requests support abort cancellation.
+- Script runner awaits promises.
+- Script runner aborts on error.
+- Script runner enforces execution timeout.
+
+### Fixed
+- Request path faker generates correct values.
+- Collections tree supports drag and drop restoration.
+- URL variable placeholders containing dots or slashes do not split into separate host/path segments.
+
 ## [1.6.0]
 
 ### Added

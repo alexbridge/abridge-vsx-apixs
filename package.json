@@ -2,7 +2,7 @@
   "name": "apixs",
   "displayName": "APIxs",
   "description": "High-performance, git-friendly, API client with familiar pm-scripting support (xs = extra scripting)",
-  "version": "1.6.0",
+  "version": "1.7.0",
   "publisher": "abridge",
   "author": "abridge",
   "repository": {
@@ -60,6 +60,12 @@
       {
         "command": "apixs.exportCollection",
         "title": "Export Collection to Postman",
+        "category": "Apixs",
+        "icon": "$(cloud-download)"
+      },
+      {
+        "command": "apixs.exportFolder",
+        "title": "Export Folder to Postman",
         "category": "Apixs",
         "icon": "$(cloud-download)"
       },
@@ -284,6 +290,10 @@
         {
           "command": "apixs.exportRequestToCurl",
           "when": "false"
+        },
+        {
+          "command": "apixs.exportFolder",
+          "when": "false"
         }
       ],
       "view/title": [
@@ -448,6 +458,11 @@
           "command": "apixs.moveDown",
           "when": "view == apixs.collections && viewItem == folder",
           "group": "2_edit@4"
+        },
+        {
+          "command": "apixs.exportFolder",
+          "when": "view == apixs.collections && viewItem == folder",
+          "group": "2_edit@5"
         },
         {
           "command": "apixs.deleteFolder",
