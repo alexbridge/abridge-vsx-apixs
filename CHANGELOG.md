@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.8.0]
+
+### Added
+- Script tests: `pm.expect` and `pm.test` results render above the response tabs.
+- Script snippet bar: inserted snippets support tab stops.
+- Requests: `User-Agent` header defaults to the current APIxs version.
+
+### Fixed
+- Responses: binary data detection uses buffer bytes, ignoring `Content-Type`.
+- Dragging a folder or request across collections moves the item instead of deleting it.
+- Percent-encoded dynamic variables like `{{$guid}}` in the URL resolve before sending.
+
 ## [1.7.0]
 
 ### Added
