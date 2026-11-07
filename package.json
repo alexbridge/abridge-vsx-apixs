@@ -2,7 +2,7 @@
   "name": "apixs",
   "displayName": "APIxs",
   "description": "High-performance, git-friendly, API client with familiar pm-scripting support (xs = extra scripting)",
-  "version": "1.8.0",
+  "version": "1.9.0",
   "publisher": "abridge",
   "author": "abridge",
   "repository": {
@@ -615,6 +615,16 @@
         "command": "apixs.switchEnvironment",
         "key": "ctrl+e",
         "when": "apixs.panelFocused"
+      },
+      {
+        "command": "apixs.moveUp",
+        "key": "ctrl+up",
+        "when": "focusedView == apixs.collections"
+      },
+      {
+        "command": "apixs.moveDown",
+        "key": "ctrl+down",
+        "when": "focusedView == apixs.collections"
       }
     ]
   },

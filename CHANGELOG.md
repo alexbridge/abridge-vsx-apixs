@@ -1,5 +1,33 @@
 # Changelog
 
+## [1.9.0]
+
+### Added
+- Scripts: `pm.*` snippet completions in the pre/post script editor. Type a name fragment (`info.it`); Enter replaces the typed text with the snippet. Inside a string literal, only the name is inserted.
+
+### Fixed
+- Runner: stopping a run no longer records the aborted in-flight request as a failed result.
+- Runner: the Runner leaves the running state when a run throws before completing.
+
+## [1.8.1]
+
+### Added
+- Scripts: `Format` button in the pre/post script editor reformats JavaScript.
+- Scripts: `pm.sendRequest` accepts a `timeout` option in milliseconds.
+- Collections tree: `Ctrl+Up` / `Ctrl+Down` move the selected collection, folder, or request.
+- Collections tree: reopening a workspace reveals the last opened request, expanding its folders.
+- JSON body: pasting into a string literal escapes the pasted text.
+- Runner: the tab icon show progress and finish icons.
+
+### Changed
+- Inspect tab: JSON request and response bodies render indented.
+
+### Fixed
+- Scripts: an error caught inside a `pm.sendRequest` `try/catch` no longer fails the request.
+- Scripts: an uncaught error in a pre-request script aborts the send.
+- Scripts: `pm.variables` set in a collection pre-request script resolve when sending a request on its own.
+- Scripts: `pm.request.body` is an object with `.raw`, matching Postman.
+
 ## [1.8.0]
 
 ### Added
